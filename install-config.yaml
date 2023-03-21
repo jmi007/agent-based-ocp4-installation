@@ -19,7 +19,7 @@ controlPlane:
   name: master
   replicas: 3
 metadata:
-  name: thanhnq
+  name: tinnguyen
 networking:
   clusterNetwork:
   - cidr: 10.128.0.0/14

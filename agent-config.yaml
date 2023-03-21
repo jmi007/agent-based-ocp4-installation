@@ -1,7 +1,7 @@
 apiVersion: v1alpha1
 metadata:
   name: tinnguyen
-rendezvousIP: 192.168.68.14
+rendezvousIP: 192.168.67.129
 hosts:
   - hostname: master01.demolab.local
     interfaces:

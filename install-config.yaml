@@ -49,8 +49,8 @@ platform:
         bootMACAddress: 00:50:56:bd:83:5a
     apiVIP: "192.168.67.126" # if v4.12, apiVIP --> apiVIPs
     ingressVIP: "192.168.67.127" # if v4.12, ingressVIP --> ingressVIPs
-pullSecret: '{"auths": { "bastion.demolab.local:8443": {"auth": "YOUR_AUTH_CODE"}}}'
-sshKey: 'YOUR_SSH_KEY' 
+pullSecret: '{"auths": { "bastion.demolab.local:8443": {"auth": "aW5pdDpkNGhTNm1CTTE1Nzl5OEQzYTJjRUFLenVldlliUTBzRw=="}}}'
+sshKey: 'node_ssh_key.pub' 
 imageContentSources:
 - mirrors:
   - bastion.demolab.local:8443/openshift/release

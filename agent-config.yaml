@@ -3,130 +3,130 @@ metadata:
   name: thanhnq
 rendezvousIP: 192.168.68.14
 hosts:
-  - hostname: master01.thanhnq.vnlabs.dev
+  - hostname: master01.demolab.local
     interfaces:
      - name: ens192
-       macAddress: 00:50:56:87:94:a1
+       macAddress: 00:50:56:bd:aa:74
     networkConfig:
       interfaces:
         - name: ens192
           type: ethernet
           state: up
-          mac-address: 00:50:56:87:94:a1
+          mac-address: 00:50:56:bd:aa:74
           ipv4:
             enabled: true
             address:
-              - ip: 192.168.68.14
+              - ip: 192.168.67.121
                 prefix-length: 24
             dhcp: false
       dns-resolver:
         config:
           server:
-            - 192.168.67.3
+            - 192.168.67.129
       routes:
         config:
           - destination: 0.0.0.0/0
-            next-hop-address: 192.168.68.254
+            next-hop-address: 192.168.67.254
             next-hop-interface: ens192
-  - hostname: master02.thanhnq.vnlabs.dev
+  - hostname: master02.demolab.local
     interfaces:
      - name: ens192
-       macAddress: 00:50:56:87:94:a2
+       macAddress: 00:50:56:bd:e9:1c
     networkConfig:
       interfaces:
         - name: ens192
           type: ethernet
           state: up
-          mac-address: 00:50:56:87:94:a2
+          mac-address: 00:50:56:bd:e9:1c
           ipv4:
             enabled: true
             address:
-              - ip: 192.168.68.12
+              - ip: 192.168.67.122
                 prefix-length: 24
             dhcp: false
       dns-resolver:
         config:
           server:
-            - 192.168.67.3
+            - 192.168.67.129
       routes:
         config:
           - destination: 0.0.0.0/0
-            next-hop-address: 192.168.68.254
+            next-hop-address: 192.168.67.254
             next-hop-interface: ens192
-  - hostname: master03.thanhnq.vnlabs.dev
+  - hostname: master03.demolab.local
     interfaces:
      - name: ens192
-       macAddress: 00:50:56:87:94:a3
+       macAddress: 00:50:56:bd:83:5a
     networkConfig:
       interfaces:
         - name: ens192
           type: ethernet
           state: up
-          mac-address: 00:50:56:87:94:a3
+          mac-address: 00:50:56:bd:83:5a
           ipv4:
             enabled: true
             address:
-              - ip: 192.168.68.13
+              - ip: 192.168.67.123
                 prefix-length: 24
             dhcp: false
       dns-resolver:
         config:
           server:
-            - 192.168.67.3
+            - 192.168.67.129
       routes:
         config:
           - destination: 0.0.0.0/0
-            next-hop-address: 192.168.68.254
+            next-hop-address: 192.168.67.254
             next-hop-interface: ens192
-  - hostname: worker01.thanhnq.vnlabs.dev
+  - hostname: worker01.demolab.local
     interfaces:
      - name: ens192
-       macAddress: 00:50:56:87:94:b1
+       macAddress: 00:50:56:bd:ab:12
     networkConfig:
       interfaces:
         - name: ens192
           type: ethernet
           state: up
-          mac-address: 00:50:56:87:94:b1
+          mac-address: 00:50:56:bd:ab:12
           ipv4:
             enabled: true
             address:
-              - ip: 192.168.68.21
+              - ip: 192.168.67.124
                 prefix-length: 24
             dhcp: false
       dns-resolver:
         config:
           server:
-            - 192.168.67.3
+            - 192.168.67.129
       routes:
         config:
           - destination: 0.0.0.0/0
-            next-hop-address: 192.168.68.254
+            next-hop-address: 192.168.67.254
             next-hop-interface: ens192            
-  - hostname: worker02.thanhnq.vnlabs.dev
+  - hostname: worker02.demolab.local
     interfaces:
      - name: ens192
-       macAddress: 00:50:56:87:94:b2
+       macAddress: 00:50:56:bd:d9:02
     networkConfig:
       interfaces:
         - name: ens192
           type: ethernet
           state: up
-          mac-address: 00:50:56:87:94:b2
+          mac-address: 00:50:56:bd:d9:02
           ipv4:
             enabled: true
             address:
-              - ip: 192.168.68.22
+              - ip: 192.168.67.125
                 prefix-length: 24
             dhcp: false
       dns-resolver:
         config:
           server:
-            - 192.168.67.3
+            - 192.168.67.129
       routes:
         config:
           - destination: 0.0.0.0/0
-            next-hop-address: 192.168.68.254
+            next-hop-address: 192.168.67.254
             next-hop-interface: ens192            
  
             

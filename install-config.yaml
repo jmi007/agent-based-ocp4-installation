@@ -50,7 +50,7 @@ platform:
     apiVIP: "192.168.67.126" # if v4.12, apiVIP --> apiVIPs
     ingressVIP: "192.168.67.127" # if v4.12, ingressVIP --> ingressVIPs
 pullSecret: '{"auths": { "bastion.demolab.local:8443": {"auth": "aW5pdDpkNGhTNm1CTTE1Nzl5OEQzYTJjRUFLenVldlliUTBzRw=="}}}'
-sshKey: 'node_ssh_key.pub' 
+sshKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC+jL536WZNQ+hqRpxU0I+uBBSBm1XIVaM7vVJrTMrYbRbb8SxH3CDI6g+ZhozcN346pqVbkMa+XxXqzjQaQGFJOvb/n3hIZkU8VfzdtlEbQ4H1oKXzCuL4QB+uy+2KtEQwSXVemOCy8s3fQBD8TV88Bxqvtcg0RySbcqdfD2p/sJqa1YhXgDKf+pP6iyDTUpUQyLqkkF3UFBkzKhf8R9zPS+SVMXQUDCxI8DTaz04H9FY/7jayST4/UI52ZROia8DQuP/f99by/VS/leztXfNcCNA3nhbf10CBjBN1dlrqdTrGy/U1pLlStVJ4WO3UjATf8FBLHjkSGRNrBIoHqaMB0GCkreK3R+R+ntTZPBHnsdh4cBylVKgtqZ9BAzwx0CHnmFA5+ZQo6vUNxqS0pT4D4XzE6/e01PVXsmk/CJV1kmngjg6C0bZEwfavCoX2fs9AanprgmxbX3w5aWXfYRHRwTvjrhOF5t7PpC8i0oFhhSRZIs+CN3m/dpSP2WoeJYU= tinnguyen@bastion.demolab.local' 
 imageContentSources:
 - mirrors:
   - bastion.demolab.local:8443/openshift/release

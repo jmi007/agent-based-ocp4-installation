@@ -6,6 +6,7 @@ worker01.tinnguyen.demolab.local - 192.168.67.124 - 00:50:56:bd:ab:12
 worker02.tinnguyen.demolab.local - 192.168.67.125 - 00:50:56:bd:d9:02
 
 bastion.demolab.local - 192.168.67.128 
+rhidm.demolab.local - 192.168.67.129
 
 api.tinnguyen.demolab.local - 192.168.67.126
 api-int.tinnguyen.demolab.local - 192.168.67.126

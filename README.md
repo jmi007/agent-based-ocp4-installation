@@ -11,7 +11,7 @@ Hướng dẫn này sẽ giúp các bạn rõ hơn về những bước cần th
 Các bạn có thể tham khảo clip thực hiện trên kênh youtube [RedHat VN Labs](https://www.youtube.com/@rhvnlabs)
 
 Để chuẩn bị, chúng ta cần:
-- 1 máy bastion host chạy RHEL8 với giao diện GUI có Firefox (4vCPU, 8Gb RAM, HDD 120Gb) - chúng ta sẽ tương tác với openshift thông qua bastion host này. Host này cũng sẽ làm mirror registry luôn (trong clip chúng tôi dùng tên __quay__ cho host này, tuy nhiên bên dưới trong phần hướng dẫn chúng tôi vẫn để là __bastion__ để các bạn dễ follow)
+- 1 máy bastion host chạy RHEL8 với giao diện GUI có Firefox (4vCPU, 8Gb RAM, HDD 200Gb) - chúng ta sẽ tương tác với openshift thông qua bastion host này. Host này cũng sẽ làm mirror registry luôn (trong clip chúng tôi dùng tên __quay__ cho host này, tuy nhiên bên dưới trong phần hướng dẫn chúng tôi vẫn để là __bastion__ để các bạn dễ follow)
 - 3 master node (8vCPU, 16Gb RAM, HDD 120Gb) - HĐH sẽ đựoc cài đặt sau
 - 2 worker node (8vCPU, 16Gb RAM, HDD 120Gb) - HĐH sẽ đựoc cài đặt sau
 
@@ -70,14 +70,14 @@ Tiếp theo, update trusted CA trên bastion host
 
 Login vào registry
 ```
-[user@bastion mirror]# podman login --authfile pull-secret.txt -u init \
+[user@bastion mirror]# podman login --authfile pull-secret -u init \
                         -p $REGISTRY_PW $REGISTRY_SERVER:8443 --tls-verify=false
 ```
 sau câu lệnh đăng nhập này, một mục nội dung secret tương ứng với tên của mirror registry sẽ đựoc tự động thêm vào pull-secret.txt, chúng ta có thể kiểm tra bằng cách xem nội dung file này.
 
-Tiếp theo, sử dụng _jq_ để chuyển pull-secret.txt sang dạng _json_ và copy vào các đường dẫn cần thiết
+Tiếp theo, sử dụng _jq_ để chuyển pull-secret sang dạng _json_ và copy vào các đường dẫn cần thiết
 ```
-[user@bastion mirror]# cat ./pull-secret.txt | jq . > pull-secret.json
+[user@bastion mirror]# cat ./pull-secret | jq . > pull-secret.json
 [user@bastion mirror]# mkdir -p ~/.config/containers
 [user@bastion mirror]# cp pull-secret.json ~/.config/containers/auth.json
 [user@bastion mirror]# mkdir ~/.docker

@@ -1,16 +1,12 @@
-quay.vnlabs.dev             192.168.68.10 <Automatic>
-master01.thanhnq.vnlabs.dev 192.168.68.14 00:50:56:87:94:a1
-master02.thanhnq.vnlabs.dev 192.168.68.12 00:50:56:87:94:a2
-master03.thanhnq.vnlabs.dev 192.168.68.13 00:50:56:87:94:a3
+master01.tinnguyen.demolab.local - 192.168.67.121 - 00:50:56:bd:aa:74
+master02.tinnguyen.demolab.local - 192.168.67.122 - 00:50:56:bd:e9:1c
+master03.tinnguyen.demolab.local - 192.168.67.123 - 00:50:56:bd:83:5a
 
-worker01.thanhnq.vnlabs.dev 192.168.68.21 00:50:56:87:94:b1
-worker02.thanhnq.vnlabs.dev 192.168.68.22 00:50:56:87:94:b2
+worker01.tinnguyen.demolab.local - 192.168.67.124 - 00:50:56:bd:ab:12
+worker02.tinnguyen.demolab.local - 192.168.67.125 - 00:50:56:bd:d9:02
 
-infra01.thanhnq.vnlabs.dev 192.168.68.23 00:50:56:87:94:c1
-infra02.thanhnq.vnlabs.dev 192.168.68.24 00:50:56:87:94:c2
-infra03.thanhnq.vnlabs.dev 192.168.68.25 00:50:56:87:94:c3
+bastion.demolab.local - 192.168.67.128 
 
-
-api.thanhnq.vnlabs.dev      192.168.68.30
-api-int.thanhnq.vnlabs.dev  192.168.68.30
-*.apps.thanhnq.vnlabs.dev   192.168.68.31
+api.tinnguyen.demolab.local - 192.168.67.126
+api-int.tinnguyen.demolab.local - 192.168.67.126
+*.apps.tinnguyen.demolab.local - 192.168.67.127
